@@ -1,3 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <span class="navbar-brand">Fitq 消息队列</span>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="/queues" routerLinkActive="active">剩余消息数</a>
+      </li>
+      <li>
+        <a routerLink="/statistic" routerLinkActive="active">消耗产生消息数</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-push-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
